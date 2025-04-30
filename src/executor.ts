@@ -17,6 +17,9 @@ const agentExecutor = createReactAgent({
   tools: [exa_search],
 });
 
-await agentExecutor.invoke({
+const result = await agentExecutor.invoke({
     messages: [new HumanMessage("give me the latest news about qwen3")],
   });
+
+console.log(result);
+
