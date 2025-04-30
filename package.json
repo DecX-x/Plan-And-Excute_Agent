@@ -10,5 +10,10 @@
 		"langchain": "^0.3.24",
 		"zod": "^3.24.3",
 		"zod-to-json-schema": "^3.24.5"
+	},
+	"scripts": {
+		"start": "node --no-warnings src/main.js",
+		"query": "node --no-warnings src/main.js",
+		"verbose": "node --no-warnings src/main.js --verbose"
 	}
 }

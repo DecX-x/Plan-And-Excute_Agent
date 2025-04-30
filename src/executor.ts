@@ -23,3 +23,4 @@ const result = await agentExecutor.invoke({
 
 console.log(result);
 
+export default agentExecutor;
