@@ -42,8 +42,7 @@ const model = new ChatOpenAI({
 }).withStructuredOutput(planFunction);
 
 const planner = plannerPrompt.pipe(model);
-const result = await planner.invoke({
+await planner.invoke({
     objective: "what is the latest qwen llm?",
   });
 
-console.log(result);
